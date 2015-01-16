@@ -15,4 +15,8 @@
 <configuration>
 
 <!-- Site specific YARN configuration properties -->
+	<property>
+		<name>yard.nodemanager.aux-services</name>
+		<value>mapreduce_shuffle</value>
+	</property>
 </configuration>

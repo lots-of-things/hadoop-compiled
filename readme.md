@@ -1,11 +1,8 @@
 This is my working version of a hadoop distribution that is setup to run my own cluster.  If you do a fresh install of Ubuntu 14.04 and then follow these instructions you'll have a single node distribution.
 
-1) I'm setting up an automatic login so that my nodes will boot when I turn the machine on.  You do thi s by changing the tty1 file.
+1) I'm setting up an automatic login so that my nodes will boot when I turn the machine on.  You do this by changing the tty1 file.  Just add "-a <username>" at the end of the last line ("exec /sbin/getty -8 38400 tty")
 
     sudo nano /etc/init/tty1.conf 
-    
-Just add "-a <username>" after "exec /sbin/getty -8 38400 tty" to look like
-
     exec /sbin/getty -8 38400 tty -a doopy
     
 2) Install java ssh and git.

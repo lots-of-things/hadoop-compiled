@@ -1,0 +1,6 @@
+
+export HADOOP_HOME=/usr/local/hadoop
+
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-i386
+
+export PATH=$PATH:$HADOOP_HOME/bin

@@ -19,10 +19,19 @@
 <configuration>
 	<property>
 		<name>dfs.replication</name>
-		<value>1</value>
+		<value>2</value>
+	</property>
+	<property>
+		<name>dfs.permissions</name>
+		<value>false</value>
 	</property>
 	<property>
 		<name>dfs.namenode.name.dir</name>
 		<value>/usr/local/hadoop/namenode/data</value>
 	</property>
+	<property>
+                <name>dfs.datanode.data.dir</name>
+                <value>/usr/local/hadoop/datanode/data</value>
+        </property>
+
 </configuration>

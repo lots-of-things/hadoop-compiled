@@ -27,12 +27,15 @@ DEFAULT_LIBEXEC_DIR="$bin"/../libexec
 HADOOP_LIBEXEC_DIR=${HADOOP_LIBEXEC_DIR:-$DEFAULT_LIBEXEC_DIR}
 . $HADOOP_LIBEXEC_DIR/hadoop-config.sh
 
-# stop hdfs daemons if hdfs is present
-if [ -f "${HADOOP_HDFS_HOME}"/sbin/stop-dfs.sh ]; then
-  "${HADOOP_HDFS_HOME}"/sbin/stop-dfs.sh --config $HADOOP_CONF_DIR
+if [ -f "${HADOOP_HDFS_HOME}"/sbin/stop-jobhist.sh ]; then
+  "${HADOOP_HDFS_HOME}"/sbin/stop-jobhist.sh --config $HADOOP_CONF_DIR
 fi
 
 # stop yarn daemons if yarn is present
 if [ -f "${HADOOP_HDFS_HOME}"/sbin/stop-yarn.sh ]; then
   "${HADOOP_HDFS_HOME}"/sbin/stop-yarn.sh --config $HADOOP_CONF_DIR
+fi
+
+if [ -f "${HADOOP_HDFS_HOME}"/sbin/stop-dfs.sh ]; then
+  "${HADOOP_HDFS_HOME}"/sbin/stop-dfs.sh --config $HADOOP_CONF_DIR
 fi

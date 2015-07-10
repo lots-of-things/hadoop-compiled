@@ -36,3 +36,8 @@ fi
 if [ -f "${HADOOP_YARN_HOME}"/sbin/start-yarn.sh ]; then
   "${HADOOP_YARN_HOME}"/sbin/start-yarn.sh --config $HADOOP_CONF_DIR
 fi
+
+if [ -f "${HADOOP_YARN_HOME}"/sbin/start-jobhist.sh ]; then
+  "${HADOOP_YARN_HOME}"/sbin/start-jobhist.sh --config $HADOOP_CONF_DIR
+fi
+

@@ -23,6 +23,6 @@
 	</property>
 	<property>
 		<name>mapred.job.tracker</name>
-		<value>kelly:54311</value>
+		<value>skipper:54311</value>
 	</property>
 </configuration>

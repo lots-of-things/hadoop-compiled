@@ -25,14 +25,14 @@
 	</property>
 	<property>
 		<name>yarn.resourcemanager.resource-tracker.address</name>
-		<value>kelly:8025</value>
+		<value>skipper:8025</value>
 	</property>
 	<property>
 		<name>yarn.resourcemanager.scheduler.address</name>
-    		<value>kelly:8030</value>
+    		<value>skipper:8030</value>
 	</property>
 	<property>
     		<name>yarn.resourcemanager.address</name>
-    		<value>kelly:8040</value>
+    		<value>skipper:8040</value>
   	</property>
 </configuration>
